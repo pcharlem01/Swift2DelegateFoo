@@ -12,9 +12,35 @@
                         <viewControllerLayoutGuide type="top" id="rX8-vg-wi0"/>
                         <viewControllerLayoutGuide type="bottom" id="e89-f2-Yr4"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="BIA-yw-pJe">
+                    <view key="view" contentMode="scaleToFill" id="BIA-yw-pJe" customClass="FooTwoViewController">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q5u-tq-k2a">
+                                <rect key="frame" x="279" y="289" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1os-mn-GBQ">
+                                <rect key="frame" x="277" y="360" width="46" height="30"/>
+                                <state key="normal" title="Red">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dHf-Ru-1jI">
+                                <rect key="frame" x="277" y="412" width="46" height="30"/>
+                                <state key="normal" title="Green">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rnZ-bg-iaB">
+                                <rect key="frame" x="277" y="459" width="46" height="30"/>
+                                <state key="normal" title="Blue">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
@@ -46,7 +72,7 @@
                     <navigationItem key="navigationItem" id="Gf2-PW-OEr">
                         <barButtonItem key="rightBarButtonItem" title="Color" id="NEJ-5R-Cta">
                             <connections>
-                                <segue destination="htT-mk-BAn" kind="show" id="cDv-TY-qbB"/>
+                                <segue destination="htT-mk-BAn" kind="show" identifier="mySegue" id="cDv-TY-qbB"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
