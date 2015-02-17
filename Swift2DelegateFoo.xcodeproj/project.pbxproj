@@ -13,6 +13,7 @@
 		E1BE4DAC1A92E178002F3921 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1BE4DAB1A92E178002F3921 /* Images.xcassets */; };
 		E1BE4DAF1A92E178002F3921 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1BE4DAD1A92E178002F3921 /* LaunchScreen.xib */; };
 		E1BE4DBB1A92E178002F3921 /* Swift2DelegateFooTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BE4DBA1A92E178002F3921 /* Swift2DelegateFooTests.swift */; };
+		E1BE4DC51A92E623002F3921 /* FooTwoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BE4DC41A92E623002F3921 /* FooTwoController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		E1BE4DB41A92E178002F3921 /* Swift2DelegateFooTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Swift2DelegateFooTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1BE4DB91A92E178002F3921 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1BE4DBA1A92E178002F3921 /* Swift2DelegateFooTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift2DelegateFooTests.swift; sourceTree = "<group>"; };
+		E1BE4DC41A92E623002F3921 /* FooTwoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FooTwoController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				E1BE4DA41A92E178002F3921 /* AppDelegate.swift */,
 				E1BE4DA61A92E178002F3921 /* ViewController.swift */,
+				E1BE4DC41A92E623002F3921 /* FooTwoController.swift */,
 				E1BE4DA81A92E178002F3921 /* Main.storyboard */,
 				E1BE4DAB1A92E178002F3921 /* Images.xcassets */,
 				E1BE4DAD1A92E178002F3921 /* LaunchScreen.xib */,
@@ -212,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1BE4DC51A92E623002F3921 /* FooTwoController.swift in Sources */,
 				E1BE4DA71A92E178002F3921 /* ViewController.swift in Sources */,
 				E1BE4DA51A92E178002F3921 /* AppDelegate.swift in Sources */,
 			);
