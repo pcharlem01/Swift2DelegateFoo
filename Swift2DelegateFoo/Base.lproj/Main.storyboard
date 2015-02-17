@@ -22,32 +22,48 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1os-mn-GBQ">
-                                <rect key="frame" x="277" y="360" width="46" height="30"/>
-                                <state key="normal" title="Red">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dHf-Ru-1jI">
                                 <rect key="frame" x="277" y="412" width="46" height="30"/>
                                 <state key="normal" title="Green">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="colorSelectionButton:" destination="BIA-yw-pJe" eventType="touchUpInside" id="zXT-3l-GLr"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rnZ-bg-iaB">
                                 <rect key="frame" x="277" y="459" width="46" height="30"/>
                                 <state key="normal" title="Blue">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="colorSelectionButton:" destination="BIA-yw-pJe" eventType="touchUpInside" id="OeT-Gz-WcL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1os-mn-GBQ">
+                                <rect key="frame" x="279" y="374" width="46" height="30"/>
+                                <state key="normal" title="Red">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="colorSelectionButton:" destination="BIA-yw-pJe" eventType="touchUpInside" id="6Hs-tG-eBl"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="colorLabel" destination="q5u-tq-k2a" id="WBm-lO-EjE"/>
+                        </connections>
                     </view>
                     <toolbarItems>
                         <barButtonItem title="Item" id="wue-uw-DVd"/>
                     </toolbarItems>
                     <navigationItem key="navigationItem" title="Foo Two" id="9Mo-1A-OGN">
-                        <barButtonItem key="rightBarButtonItem" title="Save" id="xpc-DY-Zwt"/>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="xpc-DY-Zwt">
+                            <connections>
+                                <action selector="saveColor:" destination="BIA-yw-pJe" id="Lx9-Kd-0s6"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>

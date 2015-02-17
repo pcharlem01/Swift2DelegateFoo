@@ -8,12 +8,24 @@
 
 import UIKit
 
-class FooTwoController: UIViewController {
+class FooTwoViewController: UIViewController {
+    
+    var colorString = ""
 
+    @IBOutlet weak var colorLabel: UILabel!
+    
+    @IBAction func saveColor(sender : UIBarButtonItem) {
+    }
+    
+    @IBAction func colorSelectionButton(sender: UIButton) {
+        colorLabel.text = sender.titleLabel!.text!
+    }
     override func viewDidLoad() {
+        
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        colorLabel.text = colorString
+        
     }
 
 }
